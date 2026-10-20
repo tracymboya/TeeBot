@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TeeBot | Personal Chatbot</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="chat-container">
+
+        <header class="chat-header">
+
+            <!-- TeeBot AI logo -->
+            <div class="avatar">
+                <i class="bx bx-brain-circuit"></i>
+            </div>
+
+            <div class="brand-info">
+                <h1>TeeBot</h1>
+                <p>Your personal chatbot</p>
+            </div>
+
+            <span class="status">
+                <span class="status-dot"></span>
+                Online
+            </span>
+
+        </header>
+
+    
+        <section
+            id="chat-messages"
+            class="chat-messages"
+            aria-live="polite"
+            aria-label="Chat conversation"
+        >
+            <div class="message bot-message">
+                Hey! 👋 I'm TeeBot. What's on your mind?
+            </div>
+        </section>
+
+        <form id="chat-form" class="chat-input-area">
+
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Message TeeBot..."
+                aria-label="Type your message"
+                autocomplete="off"
+                required
+            >
+        <button type="submit" aria-label="Send message">
+        <i class="bx bx-send"></i>
+        </button>
+
+        </form>
+
+        <footer class="chat-footer">
+            <i class="bx bx-brain"></i>
+            TeeBot • Your personal AI companion
+        </footer>
+
+    </main>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
