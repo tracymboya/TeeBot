@@ -22,7 +22,6 @@ function addMessage(text, sender) {
 function getBotReply(userText) {
     const text = userText.toLowerCase().trim();
 
-    //Greetings
     if (/^(hi+|hello+|hey+|heey+|heyy+|hii+|heya+|yo+|sup)[!.?, ]*$/.test(text)) {
         return "Heeey! 😄 Welcome to TeeBot! What's up?";
     }
